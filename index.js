@@ -2,11 +2,14 @@ const express = require("express");
 const cors = require("cors");
 const nodeMailer = require("nodemailer");
 const api = express();
+var helmet = require("helmet");
+
 require("dotenv").config();
 
 api.use(cors());
 api.use(express.urlencoded({ extended: true }));
 api.use(express.json());
+api.use(helmet())
 
 api.post("/sendEmail", (req, res) => {
   try {
