@@ -59,6 +59,6 @@ api.post("/sendEmail", (req, res) => {
 });
 // api.use(express.bodyParser())
 
-api.listen(3000, () => {
-  console.log("Connected on http://localhost:3000/");
+api.listen(8080, () => {
+  console.log("Connected on http://localhost:8080/");
 });
