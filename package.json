@@ -7,6 +7,9 @@
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engine": {
+    "node": "10.16.0"
+  },
   "author": "Thomas Jamais",
   "license": "ISC",
   "dependencies": {
