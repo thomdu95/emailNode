@@ -71,6 +71,6 @@ api.post("/sendEmail", (req, res) => {
 });
 // api.use(express.bodyParser())
 
-api.listen(8080, () => {
+api.listen(process.env.PORT || 8080, () => {
   console.log("Connected on http://localhost:8080/");
 });
